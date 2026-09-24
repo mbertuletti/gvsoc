@@ -2,6 +2,7 @@ __pycache__/
 docs/developer/_build/
 build/
 /install/
+pyenv_softhier/
 add_dramsyslib_patches/build_dynlib_from_github_dramsys5/DRAMSys
 add_dramsyslib_patches/build_dynlib_from_github_dramsys5/cmake*
 *DRAMSysRecordable*
