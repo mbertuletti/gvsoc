@@ -25,3 +25,4 @@ tests/siracusa/pulp-sdk-siracusa/
 tests/pulp-nn/
 tests/mempool/apps-llvm-mempool/
 tests/mempool/work/
+pyenv_softhier/
