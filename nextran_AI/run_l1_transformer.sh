@@ -3,7 +3,7 @@
 # (mc_pool model).
 #
 # Usage: [options] ./run_l1_transformer.sh single|multi
-#	DEFINES="-DPIPELINED -DTILESHIFT -DREPLICATE_F"  app variant
+#	DEFINES="-DPIPELINED -DTILESHIFT"                app variant
 #	BEAM=128 EMBED=32 TDSAMPLES=32                   shapes
 #
 #	NUM_CORES=512                                    cores per cluster
@@ -35,7 +35,7 @@ MEMPOOL_DIR=${MEMPOOL_DIR:-/scratch/mbertuletti/mempool}
 # software build (multi)
 MC_ARCH_DIR="$ROOT_DIR/build/mc_pool_arch_tensorpool"
 
-DEFINES="${DEFINES--DPIPELINED -DTILESHIFT -DREPLICATE_F}"
+DEFINES="${DEFINES--DPIPELINED -DTILESHIFT}"
 DEFINES+=" -DBEAM=${BEAM:-128} -DEMBED=${EMBED:-32} -DTDSAMPLES=${TDSAMPLES:-32}"
 SHAPE="${BEAM:-128}_${EMBED:-32}_${TDSAMPLES:-32}"
 

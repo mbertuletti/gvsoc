@@ -1,4 +1,4 @@
-# l1_transformer on GVSoC
+# L1 Transformer on GVSoC
 
 `run_l1_transformer.sh` builds and simulates the L1 transformer
 (MemPool repo, `software/apps/`):
@@ -39,7 +39,7 @@ Options (environment variables):
 
 | Variable | Default | |
 |---|---|---|
-| `DEFINES` | `-DPIPELINED -DTILESHIFT -DREPLICATE_F` | multi: add `-DVERIFY` for the checks |
+| `DEFINES` | `-DPIPELINED -DTILESHIFT` | multi: add `-DVERIFY` for the checks |
 | `BEAM`, `EMBED`, `TDSAMPLES` | `128`, `32`, `32` | shapes |
 | `NUM_CORES` | `512` | cores per cluster (multiple of 64, e.g. `256`, `512`) |
 | `NUM_TE_TILES` | `16` | tensor engines (TEs) per cluster, independent of `NUM_CORES`: multiple of 16, at most one per tile (`NUM_CORES/4`), not checked by the script |
